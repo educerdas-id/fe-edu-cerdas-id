@@ -1,0 +1,21 @@
+#root {
+  background-color: #ecebde;
+}
+
+/* Animasi untuk garis bawah navbar */
+@keyframes slideIn {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-border {
+  animation: slideIn 1s ease-out forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
