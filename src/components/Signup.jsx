@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // To navigate after login
 
-const Login = () => {
+const Signup = () => {
   const [username, setUsername] = useState(""); // State for username
   const [password, setPassword] = useState(""); // State for password
   const [error, setError] = useState(""); // For error notification
@@ -94,4 +94,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

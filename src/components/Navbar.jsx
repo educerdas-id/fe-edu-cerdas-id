@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import { FaSearch } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -7,9 +7,10 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Handle the link click
   const handleLinkClick = (link) => {
-    setActiveLink(link);
-    setIsMenuOpen(false);
+    setActiveLink(link); // Set active link for animation
+    setIsMenuOpen(false); // Close the mobile menu after clicking
   };
 
   return (
@@ -124,22 +125,30 @@ const Navbar = () => {
         </div>
 
         <div className="hidden sm:flex items-center space-x-8 pb-5">
-          <button
-            className={`${
-              activeLink === "login" ? "bg-black text-white" : "text-[#49454F]"
-            } hover:text-blue-600`}
-          >
-            Log In
-          </button>
-          <button
-            className={`${
-              activeLink === "signup"
-                ? "bg-black text-white"
-                : "bg-blue-500 text-white"
-            } px-4 py-1 rounded-2xl hover:bg-blue-600`}
-          >
-            Sign Up
-          </button>
+          {/* Log In Button */}
+          <Link to="/login">
+            <button
+              className={`${
+                activeLink === "login"
+                  ? "bg-black text-white"
+                  : "text-[#49454F]"
+              } hover:text-blue-600`}
+            >
+              Log In
+            </button>
+          </Link>
+          {/* Sign Up Button */}
+          <Link to="/sign-up">
+            <button
+              className={`${
+                activeLink === "signup"
+                  ? "bg-black text-white"
+                  : "bg-blue-500 text-white"
+              } px-4 py-1 rounded-2xl hover:bg-blue-600`}
+            >
+              Sign Up
+            </button>
+          </Link>
         </div>
 
         {/* Hamburger menu icon for mobile */}
@@ -155,31 +164,24 @@ const Navbar = () => {
       <div
         className={`sm:hidden ${
           isMenuOpen ? "block" : "hidden"
-        } bg-white fixed inset-0 flex flex-col  items-start`}
+        } bg-white fixed inset-0 flex flex-col items-start`}
       >
         <div className="flex justify-between items-center w-full pb-5 pr-6 pt-6">
           <div className="pl-2">
-            <img src="eduCerdas.svg" alt="Logo" className=" h-10" />
+            <img src="eduCerdas.svg" alt="Logo" className="h-10" />
           </div>
           <div className="flex items-center space-x-4 ml-auto">
-            <button
-              className={`${
-                activeLink === "login"
-                  ? "bg-black text-white"
-                  : "text-[#49454F]"
-              } bg-[#F3F3F3] px-4 py-1 rounded-2xl hover:text-blue-600`}
-            >
-              Log In
-            </button>
-            <button
-              className={`${
-                activeLink === "signup"
-                  ? "bg-black text-white"
-                  : "bg-blue-500 text-white"
-              } px-4 py-1 rounded-2xl hover:bg-blue-600`}
-            >
-              Sign Up
-            </button>
+            <Link to="/login">
+              <button className="bg-[#F3F3F3] px-4 py-1 rounded-2xl hover:text-blue-600">
+                Log In
+              </button>
+            </Link>
+
+            <Link to="/sign-up">
+              <button className="bg-blue-500 text-white px-4 py-1 rounded-2xl hover:bg-blue-600">
+                Sign Up
+              </button>
+            </Link>
           </div>
 
           <div>
@@ -190,14 +192,14 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul className="space-y-6 text-lg font-montserrat  text-black font-semibold text-[22px] pt-2 w-full">
+        <ul className="space-y-6 text-lg font-montserrat text-black font-semibold text-[22px] pt-2 w-full">
           <li className="border-b-[1px] border-t-[1px] border-black w-full pb-6 pt-6">
             <Link
               to="/"
               className={`relative hover:text-grey ${
-                activeLink === "worksheets" ? "text-black" : ""
+                activeLink === "Home" ? "text-black" : ""
               } pl-10 `}
-              onClick={() => handleLinkClick("worksheets")}
+              onClick={() => handleLinkClick("Home")}
             >
               Home
             </Link>
@@ -206,9 +208,9 @@ const Navbar = () => {
             <Link
               to="/worksheets"
               className={`relative hover:text-black ${
-                activeLink === "worksheets" ? "text-black" : ""
+                activeLink === "Worksheets" ? "text-black" : ""
               } pl-10 `}
-              onClick={() => handleLinkClick("worksheets")}
+              onClick={() => handleLinkClick("Worksheets")}
             >
               Worksheets
             </Link>
@@ -217,9 +219,9 @@ const Navbar = () => {
             <Link
               to="/games"
               className={`relative hover:text-black ${
-                activeLink === "games" ? "text-black]" : ""
+                activeLink === "Games" ? "text-black" : ""
               } pl-10`}
-              onClick={() => handleLinkClick("games")}
+              onClick={() => handleLinkClick("Games")}
             >
               Games
             </Link>
@@ -228,9 +230,9 @@ const Navbar = () => {
             <Link
               to="/video-lesson"
               className={`relative hover:text-black ${
-                activeLink === "video-lesson" ? "text-black" : ""
+                activeLink === "Video Lesson" ? "text-black" : ""
               } pl-10`}
-              onClick={() => handleLinkClick("video-lesson")}
+              onClick={() => handleLinkClick("Video Lesson")}
             >
               Lesson Plans
             </Link>
@@ -239,9 +241,9 @@ const Navbar = () => {
             <Link
               to="/about"
               className={`relative hover:text-black ${
-                activeLink === "about" ? "text-black" : ""
+                activeLink === "About" ? "text-black" : ""
               } pl-10`}
-              onClick={() => handleLinkClick("about")}
+              onClick={() => handleLinkClick("About")}
             >
               About Us
             </Link>
