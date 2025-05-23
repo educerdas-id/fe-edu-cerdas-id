@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import NavbarLogin from "../components/NavbarLogin";
 
-const Home = () => {
+const HomeLogin = () => {
   return (
     <div>
-      <Navbar />
+      <NavbarLogin />
       <div className="relative bg-blue-500 text-white">
         {/* Hero Image */}
         <img
@@ -49,4 +49,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeLogin;
