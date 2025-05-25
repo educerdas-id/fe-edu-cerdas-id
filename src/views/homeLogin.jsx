@@ -14,7 +14,6 @@ const HomeLogin = () => {
         />
 
         <div className="relative max-w-screen-xl mx-auto px-4 pb-12">
-          {/* Title with slide-up animation */}
           <h1 className="text-2xl md:text-4xl font-montserrat mb-4 px-16 md:px-0 text-center pt-6 slide-up">
             Start learning with no limits!
           </h1>
@@ -26,7 +25,7 @@ const HomeLogin = () => {
           </p>
 
           <Link to="/u/worksheets">
-            <button className="bg-blue-500 text-white px-20 py-2 ml-16 rounded-full text-xl font-montserrat hover:bg-blue-600 fade-in-delay">
+            <button className="bg-blue-500 text-white px-20 py-2 ml-16 rounded-full text-xl font-montserrat hover:bg-blue-600 ">
               Explore
             </button>
           </Link>
@@ -46,7 +45,7 @@ const HomeLogin = () => {
           </p>
 
           <Link to="/u/worksheets">
-            <button className="bg-blue-500 text-white px-12 py-2 rounded-full text-xl font-montserrat hover:bg-blue-600 slide-up-delay">
+            <button className="bg-blue-500 text-white px-12 py-2 rounded-full text-xl font-montserrat hover:bg-blue-600 ">
               Dive right in
             </button>
           </Link>

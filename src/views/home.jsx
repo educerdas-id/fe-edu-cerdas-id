@@ -14,9 +14,9 @@ const Home = () => {
       <Navbar />
       <div className="relative text-white">
         <img
-          src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748017855/homeimg_psgezy.svg" // Replace with the image URL you want to display
+          src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748017855/homeimg_psgezy.svg" 
           alt="Hero"
-          className="md:w-full md:h-full h-[380px] object-cover absolute inset-0 fade-in" // Add the fade-in class
+          className="md:w-full md:h-full h-[380px] object-cover absolute inset-0 fade-in" 
         />
 
         <div className="relative max-w-screen-xl mx-auto px-4 pb-12">
@@ -40,7 +40,6 @@ const Home = () => {
 
       <div className="bg-white pb-10">
         <div className="pt-20 text-center">
-          {/* Library Title with slide-up animation */}
           <h2 className="text-3xl font-bold text-gray-800 mb-8 slide-up">
             Our learning library
           </h2>
