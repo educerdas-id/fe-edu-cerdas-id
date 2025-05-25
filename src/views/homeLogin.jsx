@@ -20,14 +20,12 @@ const HomeLogin = () => {
             Start learning with no limits!
           </h1>
 
-          {/* Paragraph with slide-up animation */}
           <p className="text-sm md:text-lg mb-6 text-center font-montserrat md:text-left max-w-xl pt-4 px-4 md:px-0 md:pl-16 slide-up">
             Fill your curiosity and start learning with interactive worksheets,
             engaging games, and exciting lesson plans. Start exploring our
             libraries designed to make learning fun and effective!
           </p>
 
-          {/* Button with fade-in-delay animation */}
           <Link to="/u/worksheets">
             <button className="bg-blue-500 text-white px-20 py-2 ml-16 rounded-full text-xl font-montserrat hover:bg-blue-600 fade-in-delay">
               Explore
@@ -36,7 +34,6 @@ const HomeLogin = () => {
         </div>
       </div>
 
-      {/* Learning Library Section with slide-up animation */}
       <div className="bg-white pb-10">
         <div className="pt-20 text-center">
           {/* Library Title with slide-up animation */}
@@ -44,13 +41,11 @@ const HomeLogin = () => {
             Our learning library
           </h2>
 
-          {/* Library Description with slide-up animation */}
           <p className="text-lg text-gray-600 mb-10 slide-up bg-white">
             With thousands of digital and printable resources, find the best
             resource for your student.
           </p>
 
-          {/* Button with slide-up-delay animation */}
           <Link to="/u/worksheets">
             <button className="bg-blue-500 text-white px-12 py-2 rounded-full text-xl font-montserrat hover:bg-blue-600 slide-up-delay">
               Dive right in
