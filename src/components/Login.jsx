@@ -23,8 +23,8 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-100 font-montserrat">
-      <div className="bg-white p-8 rounded-3xl shadow-lg w-full max-w-sm">
+    <div className="min-h-screen flex items-center justify-center bg-blue-100 font-montserrat md:px-0 px-6">
+      <div className="bg-white p-8 rounded-3xl shadow-lg w-full max-w-sm ">
         <div className="flex justify-center mb-6">
           <img
             src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"

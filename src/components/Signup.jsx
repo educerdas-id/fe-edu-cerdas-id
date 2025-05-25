@@ -40,7 +40,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-100 font-montserrat">
+    <div className="min-h-screen flex items-center justify-center bg-blue-100 font-montserrat md:px-0 px-6">
       <div className="bg-white p-8 rounded-3xl shadow-lg w-full max-w-sm">
         <div className="flex justify-center mb-6">
           <img
