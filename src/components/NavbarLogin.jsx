@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -8,8 +8,8 @@ const NavbarLogin = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLinkClick = (link) => {
-    setActiveLink(link); 
-    setIsMenuOpen(false); 
+    setActiveLink(link);
+    setIsMenuOpen(false);
   };
 
   return (

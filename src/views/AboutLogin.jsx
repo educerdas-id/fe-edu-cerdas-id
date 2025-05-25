@@ -5,7 +5,7 @@ import NavbarLogin from "../components/NavbarLogin";
 export const AboutLogin = () => {
   return (
     <div className="bg-white h-screen">
-      <Navbar />
+      <NavbarLogin />
       <div className="">
         <div className="text-[30px] text-center font-montserrat font-bold text-black pt-20 ">
           ABOUT US
