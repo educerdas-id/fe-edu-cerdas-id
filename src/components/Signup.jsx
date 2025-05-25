@@ -102,7 +102,7 @@ const Signup = () => {
           {success && (
             <div className="text-black text-xs text-center justify-center">
               <p>{success}</p>{" "}
-              <span className="loading loading-spinner loading-md"></span>
+              <span className="loading loading-spinner loading-md mt-2"></span>
             </div>
           )}
 
