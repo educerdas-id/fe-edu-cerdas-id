@@ -28,7 +28,7 @@ const HomeLogin = () => {
           </p>
 
           {/* Button with fade-in-delay animation */}
-          <Link to="/login">
+          <Link to="/u/worksheets">
             <button className="bg-blue-500 text-white px-20 py-2 ml-16 rounded-full text-xl font-montserrat hover:bg-blue-600 fade-in-delay">
               Explore
             </button>
@@ -51,7 +51,7 @@ const HomeLogin = () => {
           </p>
 
           {/* Button with slide-up-delay animation */}
-          <Link to="/login">
+          <Link to="/u/worksheets">
             <button className="bg-blue-500 text-white px-12 py-2 rounded-full text-xl font-montserrat hover:bg-blue-600 slide-up-delay">
               Dive right in
             </button>
