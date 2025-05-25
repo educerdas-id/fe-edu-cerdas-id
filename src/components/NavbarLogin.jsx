@@ -19,7 +19,7 @@ const NavbarLogin = () => {
         {/* Logo */}
         <div className="flex justify-start">
           <img
-            src="eduCerdas.svg"
+            src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
             alt="Logo"
             className="xl:h-24 pl-2 h-10 md:h-18 lg:h-20"
           />
@@ -40,7 +40,7 @@ const NavbarLogin = () => {
             <ul className="flex space-x-10 text-[16px] text-black font-montserrat">
               <li>
                 <Link
-                  to="/"
+                  to="/u"
                   className={`relative hover:text-black ${
                     activeLink === "Home" ? "text-black" : ""
                   }`}
@@ -56,7 +56,7 @@ const NavbarLogin = () => {
               </li>
               <li>
                 <Link
-                  to="/worksheets"
+                  to="/u/worksheets"
                   className={`relative hover:text-black ${
                     activeLink === "worksheets" ? "text-black" : ""
                   }`}
@@ -72,7 +72,7 @@ const NavbarLogin = () => {
               </li>
               <li>
                 <Link
-                  to="/games"
+                  to="/u/games"
                   className={`relative hover:text-black ${
                     activeLink === "games" ? "text-black" : ""
                   }`}
@@ -88,13 +88,13 @@ const NavbarLogin = () => {
               </li>
               <li>
                 <Link
-                  to="/video-lesson"
+                  to="/u/video-lesson"
                   className={`relative hover:text-black ${
                     activeLink === "video-lesson" ? "text-black" : ""
                   }`}
                   onClick={() => handleLinkClick("video-lesson")}
                 >
-                  Lesson Plans
+                  Video Lesson
                   <span
                     className={`absolute bottom-0 left-0 w-full h-0.5 bg-black transform ${
                       activeLink === "video-lesson"
@@ -106,7 +106,7 @@ const NavbarLogin = () => {
               </li>
               <li>
                 <Link
-                  to="/about"
+                  to="/u/about"
                   className={`relative hover:text-black ${
                     activeLink === "about" ? "text-black" : ""
                   }`}
@@ -156,7 +156,11 @@ const NavbarLogin = () => {
       >
         <div className="flex justify-between items-center w-full pb-5 pr-6 pt-6">
           <div className="pl-2">
-            <img src="eduCerdas.svg" alt="Logo" className="h-10" />
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
+              alt="Logo"
+              className="h-10"
+            />
           </div>
           <div className="flex items-center space-x-4 ml-auto">
             <Link to="/">
@@ -177,7 +181,7 @@ const NavbarLogin = () => {
         <ul className="space-y-6 text-lg font-montserrat text-black font-semibold text-[22px] pt-2 w-full">
           <li className="border-b-[1px] border-t-[1px] border-black w-full pb-6 pt-6">
             <Link
-              to="/"
+              to="/u"
               className={`relative hover:text-grey ${
                 activeLink === "Home" ? "text-black" : ""
               } pl-10 `}
@@ -188,7 +192,7 @@ const NavbarLogin = () => {
           </li>
           <li className="border-b-[1px]  border-black w-full pb-6">
             <Link
-              to="/worksheets"
+              to="/u/worksheets"
               className={`relative hover:text-black ${
                 activeLink === "Worksheets" ? "text-black" : ""
               } pl-10 `}
@@ -199,7 +203,7 @@ const NavbarLogin = () => {
           </li>
           <li className="border-b-[1px] border-black w-ful pb-6">
             <Link
-              to="/games"
+              to="/u/games"
               className={`relative hover:text-black ${
                 activeLink === "Games" ? "text-black" : ""
               } pl-10`}
@@ -210,18 +214,18 @@ const NavbarLogin = () => {
           </li>
           <li className="border-b-[1px] border-black w-full pb-6">
             <Link
-              to="/video-lesson"
+              to="/u/video-lesson"
               className={`relative hover:text-black ${
                 activeLink === "Video Lesson" ? "text-black" : ""
               } pl-10`}
               onClick={() => handleLinkClick("Video Lesson")}
             >
-              Lesson Plans
+              Vide Lesson
             </Link>
           </li>
           <li className="border-b-[1px] border-black w-full pb-6">
             <Link
-              to="/about"
+              to="/u/about"
               className={`relative hover:text-black ${
                 activeLink === "About" ? "text-black" : ""
               } pl-10`}

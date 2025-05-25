@@ -1,94 +1,120 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // To navigate after login
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const [username, setUsername] = useState(""); // State for username
-  const [password, setPassword] = useState(""); // State for password
-  const [error, setError] = useState(""); // For error notification
-  const navigate = useNavigate(); // Hook to navigate to other routes
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const navigate = useNavigate();
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simple validation: check if both fields are filled
-    if (!username || !password) {
-      setError("Both username and password are required!");
+    if (!name || !username || !password || !confirmPassword) {
+      setError("All fields are required!");
       return;
     }
 
-    // Example authentication logic (you can replace with API call)
-    if (username === "user" && password === "123") {
-      navigate("/");
-    } else {
-      setError("Invalid username or password!");
+    if (password !== confirmPassword) {
+      setError("Passwords do not match!");
+      return;
     }
+
+    const newUser = {
+      name,
+      username,
+      password,
+    };
+
+    console.log("User Registered:", newUser);
+
+    setError("");
+    setSuccess("Registration successful! Redirecting...");
+
+    setTimeout(() => {
+      navigate("/u");
+    }, 2000);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
+    <div className="min-h-screen flex items-center justify-center bg-blue-100 font-montserrat">
+      <div className="bg-white p-8 rounded-3xl shadow-lg w-full max-w-sm">
         <div className="flex justify-center mb-6">
-          <img src="eduCerdas.svg" alt="Logo" className="w-16 h-16" />
+          <img
+            src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
+            alt="educerdas.id"
+            className="h-20 mt-4 mb-6"
+          />
         </div>
 
-        <h1 className="text-2xl font-semibold text-center mb-6">Login</h1>
-
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-3">
           <div>
-            <label
-              htmlFor="username"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Username
-            </label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name"
+              className="w-full py-3 border pl-6 text-black placeholder:font-montserrat bg-[#ECE6F0] rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500 placeholder:text-sm"
+            />
+          </div>
+
+          <div>
             <input
               type="text"
               id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="Enter your username"
-              className="w-full mt-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Username"
+              className="w-full py-3 border pl-6 text-black placeholder:font-montserrat bg-[#ECE6F0] rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500 placeholder:text-sm"
             />
           </div>
-
           <div>
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Password
-            </label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter your password"
-              className="w-full mt-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Password"
+              className="w-full py-3 border pl-6 text-black placeholder:font-montserrat bg-[#ECE6F0] rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500 placeholder:text-sm"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              id="confirmpassword"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              placeholder="Confirm Password"
+              className="w-full py-3 border pl-6 text-black placeholder:font-montserrat bg-[#ECE6F0] rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500 placeholder:text-sm"
             />
           </div>
 
           {error && (
-            <div className="text-red-500 text-sm mt-2">
+            <div className="text-red-500 text-xs text-center justify-center">
               <p>{error}</p>
             </div>
           )}
 
-          <button
-            type="submit"
-            className="w-full mt-4 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            Log In
-          </button>
-        </form>
+          {success && (
+            <div className="text-black text-xs text-center justify-center">
+              <p>{success}</p>{" "}
+              <span className="loading loading-spinner loading-md"></span>
+            </div>
+          )}
 
-        <div className="mt-4 text-center text-sm">
-          Don't have an account?{" "}
-          <a href="/sign-up" className="text-blue-500 hover:text-blue-600">
-            Sign Up
-          </a>
-        </div>
+          <div className="flex justify-center items-center pt-16">
+            <button
+              type="submit"
+              className="px-16 py-3 bg-[#ECE6F0] text-sm text-black rounded-3xl hover:bg-[#E8E2EC] focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Register
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );

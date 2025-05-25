@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import NavbarLogin from "../components/NavbarLogin";
 
-export const Games = () => {
+export const GamesLogin = () => {
   return (
     <div className="bg-white h-screen">
-      <Navbar />
+      <NavbarLogin />
       <div className="bg-white">
         <h1 className="font-montserrat text-[30px] lg:text-[40px] pb-6 md:pb-0 pt-8 text-black pl-10 lg:pl-56 select-none pointer-events-none">
           Games
@@ -32,7 +32,7 @@ export const Games = () => {
                   merupakan sebuah game yang mengharuskan untuk menjawab soal
                   yang diberikan dengan benar untuk mengalahkan sang monster.
                 </p>
-                <Link to="*">
+                <Link to="/u/*">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -60,7 +60,7 @@ export const Games = () => {
                   body there are title and actions parts. When you hover over
                   this card, the description will expand.
                 </p>
-                <Link to="*">
+                <Link to="/u/*">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -88,7 +88,7 @@ export const Games = () => {
                   body there are title and actions parts. When you hover over
                   this card, the description will expand.
                 </p>
-                <Link to="*">
+                <Link to="/u/*">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -116,7 +116,7 @@ export const Games = () => {
                   body there are title and actions parts. When you hover over
                   this card, the description will expand.
                 </p>
-                <Link to="*">
+                <Link to="/u/*">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -144,7 +144,7 @@ export const Games = () => {
                   body there are title and actions parts. When you hover over
                   this card, the description will expand.
                 </p>
-                <Link to="*">
+                <Link to="/u/*">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -172,7 +172,7 @@ export const Games = () => {
                   body there are title and actions parts. When you hover over
                   this card, the description will expand.
                 </p>
-                <Link to="*">
+                <Link to="/u/*">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -186,4 +186,4 @@ export const Games = () => {
   );
 };
 
-export default Games;
+export default GamesLogin;

@@ -19,14 +19,14 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex justify-start">
           <img
-            src="eduCerdas.svg"
+            src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
             alt="Logo"
-            className="xl:h-24 pl-2 h-10 md:h-18 lg:h-20"
+            className="xl:h-24 pl-2 h-10 md:h-18 lg:h-20 select-none pointer-events-none"
           />
         </div>
 
         <div>
-          <div className="flex-grow flex justify-center">
+          <div className="flex-grow flex justify-center select-none ">
             <div className="relative w-48 md:w-full md:pt-6">
               <input
                 type="text"
@@ -36,14 +36,14 @@ const Navbar = () => {
               <FaSearch className="absolute right-3 top-1/2 transform -translate-y-2 md:translate-y-1 text-[#49454F]" />
             </div>
           </div>
-          <div className="hidden sm:flex justify-center pt-6 px-16">
-            <ul className="flex space-x-10 text-[16px] text-black font-montserrat">
+          <div className="hidden sm:flex justify-center pt-6 px-16 select-none ">
+            <ul className="flex space-x-10 text-[16px] text-black font-montserrat ">
               <li>
                 <Link
                   to="/"
                   className={`relative hover:text-black ${
                     activeLink === "Home" ? "text-black" : ""
-                  }`}
+                  } `}
                   onClick={() => handleLinkClick("Home")}
                 >
                   Home
@@ -94,7 +94,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => handleLinkClick("video-lesson")}
                 >
-                  Lesson Plans
+                  Video Lesson
                   <span
                     className={`absolute bottom-0 left-0 w-full h-0.5 bg-black transform ${
                       activeLink === "video-lesson"
@@ -168,7 +168,11 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center w-full pb-5 pr-6 pt-6">
           <div className="pl-2">
-            <img src="eduCerdas.svg" alt="Logo" className="h-10" />
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
+              alt="Logo"
+              className="h-10"
+            />
           </div>
           <div className="flex items-center space-x-4 ml-auto">
             <Link to="/login">
@@ -234,7 +238,7 @@ const Navbar = () => {
               } pl-10`}
               onClick={() => handleLinkClick("Video Lesson")}
             >
-              Lesson Plans
+              Video Lesson
             </Link>
           </li>
           <li className="border-b-[1px] border-black w-full pb-6">
