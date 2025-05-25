@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link } from "react-router-dom"; 
 import { FaSearch } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -7,16 +7,14 @@ const NavbarLogin = () => {
   const [activeLink, setActiveLink] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Handle the link click
   const handleLinkClick = (link) => {
-    setActiveLink(link); // Set active link for animation
-    setIsMenuOpen(false); // Close the mobile menu after clicking
+    setActiveLink(link); 
+    setIsMenuOpen(false); 
   };
 
   return (
     <div className="bg-white pt-4 md:pt-0 font-montserrat md:border-b-2 md:border-black sticky top-0 z-10">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center py-2">
-        {/* Logo */}
         <div className="flex justify-start">
           <img
             src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
@@ -125,7 +123,6 @@ const NavbarLogin = () => {
         </div>
 
         <div className="hidden sm:flex items-center space-x-8 pb-5">
-          {/* Sign Up Button */}
           <Link to="/">
             <button
               className={`${
@@ -139,7 +136,6 @@ const NavbarLogin = () => {
           </Link>
         </div>
 
-        {/* Hamburger menu icon for mobile */}
         <div className="sm:hidden flex items-center pr-6 ">
           <FaBars
             className="text-2xl cursor-pointer text-black"
@@ -148,7 +144,6 @@ const NavbarLogin = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`sm:hidden ${
           isMenuOpen ? "block" : "hidden"

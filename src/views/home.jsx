@@ -13,7 +13,6 @@ const Home = () => {
     <div className="bg-white h-screen">
       <Navbar />
       <div className="relative text-white">
-        {/* Hero Image with fade-in animation */}
         <img
           src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748017855/homeimg_psgezy.svg" // Replace with the image URL you want to display
           alt="Hero"
@@ -21,7 +20,6 @@ const Home = () => {
         />
 
         <div className="relative max-w-screen-xl mx-auto px-4 pb-12">
-          {/* Title with slide-up animation */}
           <h1 className="text-2xl md:text-4xl font-montserrat mb-4 px-16 md:px-0 text-center pt-6 slide-up">
             Start learning with no limits!
           </h1>

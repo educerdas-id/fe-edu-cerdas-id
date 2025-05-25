@@ -7,7 +7,6 @@ const HomeLogin = () => {
     <div className="bg-white h-screen w-screen">
       <NavbarLogin />
       <div className="relative text-white">
-        {/* Hero Image with fade-in animation */}
         <img
           src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748017855/homeimg_psgezy.svg" // Replace with the image URL you want to display
           alt="Hero"

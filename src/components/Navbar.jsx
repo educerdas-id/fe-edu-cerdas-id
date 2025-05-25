@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link } from "react-router-dom"; 
 import { FaSearch } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -7,10 +7,9 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Handle the link click
   const handleLinkClick = (link) => {
-    setActiveLink(link); // Set active link for animation
-    setIsMenuOpen(false); // Close the mobile menu after clicking
+    setActiveLink(link); 
+    setIsMenuOpen(false); 
   };
 
   return (
@@ -125,7 +124,6 @@ const Navbar = () => {
         </div>
 
         <div className="hidden sm:flex items-center space-x-8 pb-5">
-          {/* Log In Button */}
           <Link to="/login">
             <button
               className={`${
@@ -137,7 +135,6 @@ const Navbar = () => {
               Log In
             </button>
           </Link>
-          {/* Sign Up Button */}
           <Link to="/sign-up">
             <button
               className={`${
@@ -151,7 +148,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Hamburger menu icon for mobile */}
         <div className="sm:hidden flex items-center pr-6 ">
           <FaBars
             className="text-2xl cursor-pointer text-black"
@@ -160,7 +156,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`sm:hidden ${
           isMenuOpen ? "block" : "hidden"
