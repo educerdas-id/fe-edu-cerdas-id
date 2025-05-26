@@ -19,10 +19,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white pt-4 md:pt-0 font-montserrat md:border-b-2 md:border-black sticky top-0 z-10">
+    <div className="bg-white pt-4 md:pt-0 font-montserrat md:border-b-2 md:border-black sticky top-0 z-10 ">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center py-2">
         {/* Logo */}
-        <div className="flex justify-start">
+        <div className="flex justify-start  xl:pl-0 lg:pl-12">
           <img
             src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
             alt="Logo"
@@ -32,16 +32,17 @@ const Navbar = () => {
 
         <div>
           <div className="flex-grow flex justify-center select-none ">
-            <div className="relative w-48 md:w-full md:pt-6">
+            <div className="relative w-48 md:w-full xl:pt-6">
               <input
                 type="text"
                 placeholder="Search"
                 className="pl-16  md:pl-10 rounded-3xl pr-4 py-1 placeholder-[#49454F] border bg-[#ECE6F0] w-full focus:outline-none focus:ring-1 focus:ring-blue-500"
               />
-              <FaSearch className="absolute right-3 top-1/2 transform -translate-y-2 md:translate-y-1 text-[#49454F]" />
+              <FaSearch className="absolute right-3 top-1/2 transform -translate-y-2 xl:translate-y-1 text-[#49454F]" />
             </div>
           </div>
-          <div className="hidden sm:flex justify-center pt-6 px-16 select-none ">
+          {/* Menu utama hanya tampil di xl ke atas */}
+          <div className="hidden xl:flex justify-center pt-6 px-16 select-none ">
             <ul className="flex space-x-10 text-[16px] text-black font-montserrat ">
               <li>
                 <Link
@@ -129,7 +130,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="hidden sm:flex items-center space-x-8 pb-5">
+        {/* Tombol Log In & Sign Up hanya tampil di xl ke atas */}
+        <div className="hidden xl:flex items-center space-x-8 pb-5">
           <Link to="/login">
             <button
               className={`${
@@ -156,7 +158,8 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="sm:hidden flex items-center pr-6 ">
+        {/* Hamburger hanya tampil di bawah xl */}
+        <div className="flex xl:hidden items-center pr-6 ">
           <FaBars
             className="text-2xl cursor-pointer text-black"
             onClick={() => setIsMenuOpen(true)}
@@ -164,8 +167,9 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Menu dropdown mobile, hanya untuk bawah xl */}
       <div
-        className={`sm:hidden ${
+        className={`xl:hidden ${
           isMenuOpen ? "block" : "hidden"
         } bg-white fixed inset-0 flex flex-col items-start`}
       >
