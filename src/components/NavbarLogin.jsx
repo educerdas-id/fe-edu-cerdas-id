@@ -15,7 +15,7 @@ const NavbarLogin = () => {
   return (
     <div className="bg-white pt-4 md:pt-0 font-montserrat md:border-b-2 md:border-black sticky top-0 z-10">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center py-2">
-        <div className="flex justify-start xl:pl-0 pl-0 lg:pl-12">
+        <div className="flex justify-start xl:pl-0 pl-0 lg:pl-11">
           <img
             src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748143990/eduCerdas_m6bhbw.svg"
             alt="Logo"
