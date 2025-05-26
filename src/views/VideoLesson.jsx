@@ -32,7 +32,7 @@ export const VideoLesson = () => {
                   matematika untuk siswa/i yang masih duduk di bangku sekolah
                   dasar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3 md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Watch
                   </button>
@@ -59,7 +59,7 @@ export const VideoLesson = () => {
                   pembelajaran IPA Dasar 1 dengan materi tentang dasar IPA untuk
                   siswa/i yang masih duduk di bangku sekolah dasar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[72px] md:group-hover:mt-[56px] hover:text-black transition-all duration-300">
                     Watch
                   </button>
@@ -87,7 +87,7 @@ export const VideoLesson = () => {
                   dasar bahasa Inggris untuk siswa/i yang masih duduk di bangku
                   sekolah dasar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[90px] md:group-hover:mt-16  hover:text-black transition-all duration-300">
                     Watch
                   </button>
@@ -114,7 +114,7 @@ export const VideoLesson = () => {
                   pembelajaran IPS Dasar 1 dengan materi tentang dasar IPS untuk
                   siswa/i yang masih duduk di bangku sekolah dasar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Watch
                   </button>
@@ -142,7 +142,7 @@ export const VideoLesson = () => {
                   sejarah untuk siswa/i yang masih duduk di bangku sekolah
                   dasar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[82px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Watch
                   </button>
@@ -170,7 +170,7 @@ export const VideoLesson = () => {
                   dasar bahasa Indonesia untuk siswa/i yang masih duduk di
                   bangku sekolah dasar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[90px] md:group-hover:mt-[72px]  hover:text-black transition-all duration-300">
                     Watch
                   </button>

@@ -32,7 +32,7 @@ export const Games = () => {
                   merupakan sebuah game yang mengharuskan untuk menjawab soal
                   yang diberikan dengan benar untuk mengalahkan sang monster.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3 md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -60,7 +60,7 @@ export const Games = () => {
                   jawaban dari penjumlahan dengan mengarahkan ularnya pada
                   jawaban yang benar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[88px] md:group-hover:mt-[70px] hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -88,7 +88,7 @@ export const Games = () => {
                   yang kosong dari bagian soal maupun jawaban sesuai dengan
                   seharusnya.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -116,7 +116,7 @@ export const Games = () => {
                   teka-teki silang bahasa Inggris tentang istilah pada pelajaran
                   IPA.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -143,7 +143,7 @@ export const Games = () => {
                   merupakan sebuah game yang mengharuskan untuk menjawab jawaban
                   yang benar atau salah sesuai dengan definisi dari gambar.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>
@@ -170,7 +170,7 @@ export const Games = () => {
                   merupakan sebuah game yang mengharuskan untuk menyesuaikan
                   petualang dalam cerita dari sebuah liburan yang indah.
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-3  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[70px] md:group-hover:mt-14  hover:text-black transition-all duration-300">
                     Start
                   </button>

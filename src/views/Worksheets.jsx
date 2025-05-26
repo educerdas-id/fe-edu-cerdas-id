@@ -32,7 +32,7 @@ export const Worksheets = () => {
                   tahun yang sangat mudah dipahami dengan materi dan latihan
                   soal yang lengkap untuk bahan pembelajaran
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-2  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[100px] md:group-hover:mt-[82px]  hover:text-black transition-all duration-300">
                     Attempt
                   </button>
@@ -60,7 +60,7 @@ export const Worksheets = () => {
                   sangat mudah dipahami dengan materi dan latihan soal yang
                   lengkap untuk bahan pembelajaran
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-2  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[100px] md:group-hover:mt-[82px]  hover:text-black transition-all duration-300">
                     Attempt
                   </button>
@@ -88,7 +88,7 @@ export const Worksheets = () => {
                   yang sangat mudah dipahami dengan materi dan latihan soal yang
                   lengkap untuk bahan pembelajaran
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-2  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[100px] md:group-hover:mt-[82px]  hover:text-black transition-all duration-300">
                     Attempt
                   </button>
@@ -116,7 +116,7 @@ export const Worksheets = () => {
                   sangat mudah dipahami dengan materi dan latihan soal yang
                   lengkap untuk bahan pembelajaran
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-2  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[100px] md:group-hover:mt-[82px]  hover:text-black transition-all duration-300">
                     Attempt
                   </button>
@@ -144,7 +144,7 @@ export const Worksheets = () => {
                   yang sangat mudah dipahami dengan materi dan latihan soal yang
                   lengkap untuk bahan pembelajaran
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-2  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[100px] md:group-hover:mt-[82px]  hover:text-black transition-all duration-300">
                     Attempt
                   </button>
@@ -172,7 +172,7 @@ export const Worksheets = () => {
                   yang sangat mudah dipahami dengan materi dan latihan soal yang
                   lengkap untuk bahan pembelajaran
                 </p>
-                <Link to="*">
+                <Link to="/signup">
                   <button className="hover:bg-[#F3F3F3] text-white px-2  md:px-5 text-[10px] md:text-[12px] sm:py-0.5 md:py-1 rounded-2xl bg-blue-500 group-hover:mt-[100px] md:group-hover:mt-[82px]  hover:text-black transition-all duration-300">
                     Attempt
                   </button>
