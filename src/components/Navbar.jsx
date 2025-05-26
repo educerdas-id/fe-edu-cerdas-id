@@ -1,15 +1,21 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
-import { FaSearch } from "react-icons/fa";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLinkClick = (link) => {
-    setActiveLink(link); 
-    setIsMenuOpen(false); 
+    if (activeLink === link) {
+      setActiveLink("");
+      setTimeout(() => {
+        setActiveLink(link);
+      }, 10);
+    } else {
+      setActiveLink(link);
+    }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -131,17 +137,19 @@ const Navbar = () => {
                   ? "bg-black text-white"
                   : "text-[#49454F]"
               } hover:text-blue-600`}
+              onClick={() => handleLinkClick("login")}
             >
               Log In
             </button>
           </Link>
-          <Link to="/sign-up">
+          <Link to="/signup">
             <button
               className={`${
                 activeLink === "signup"
                   ? "bg-black text-white"
                   : "bg-blue-500 text-white"
               } px-4 py-1 rounded-2xl hover:bg-blue-600`}
+              onClick={() => handleLinkClick("signup")}
             >
               Sign Up
             </button>
@@ -171,13 +179,19 @@ const Navbar = () => {
           </div>
           <div className="flex items-center space-x-4 ml-auto">
             <Link to="/login">
-              <button className="bg-[#F3F3F3] px-4 py-1 rounded-2xl hover:text-blue-600">
+              <button
+                className="bg-[#F3F3F3] px-4 py-1 rounded-2xl hover:text-blue-600"
+                onClick={() => handleLinkClick("login")}
+              >
                 Log In
               </button>
             </Link>
 
-            <Link to="/sign-up">
-              <button className="bg-blue-500 text-white px-4 py-1 rounded-2xl hover:bg-blue-600">
+            <Link to="/signup">
+              <button
+                className="bg-blue-500 text-white px-4 py-1 rounded-2xl hover:bg-blue-600"
+                onClick={() => handleLinkClick("signup")}
+              >
                 Sign Up
               </button>
             </Link>

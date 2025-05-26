@@ -7,12 +7,12 @@ export const Games = () => {
     <div className="bg-white h-screen">
       <Navbar />
       <div className="bg-white">
-        <h1 className="font-montserrat text-[30px] lg:text-[40px] pb-6 md:pb-8 pt-8 text-black pl-10 lg:pl-96 select-none pointer-events-none">
+        <h1 className="font-montserrat text-[30px] lg:text-[40px] pb-6 lg:pb-8  pt-8 text-black pl-10 lg:pl-72  xl:pl-96 select-none pointer-events-none">
           Games
         </h1>
       </div>
 
-      <div className="bg-white pt-4 pb-20  flex items-center justify-center rounded-md px-2 md:pl-96 md:pr-20">
+      <div className="bg-white pt-4 pb-20  flex items-center justify-center rounded-md px-2  lg:pr-16 lg:pl-72 xl:pl-96 xl:pr-20">
         <div className="flex flex-wrap gap-4 lg:gap-16">
           {/* Card 1 */}
           <div className="bg-biru1 w-[150px] lg:w-[260px] h-full first-letter:shadow-sm rounded-md group ml-6 lg:ml-0  lg:mr-0">
