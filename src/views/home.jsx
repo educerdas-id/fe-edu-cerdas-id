@@ -14,9 +14,9 @@ const Home = () => {
       <Navbar />
       <div className="relative text-white">
         <img
-          src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748017855/homeimg_psgezy.svg" 
+          src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748017855/homeimg_psgezy.svg"
           alt="Hero"
-          className="md:w-full md:h-full h-[380px] object-cover absolute inset-0 fade-in" 
+          className="md:w-full md:h-full h-[380px] object-cover absolute inset-0 fade-in"
         />
 
         <div className="relative max-w-screen-xl mx-auto px-4 pb-12">
@@ -30,7 +30,7 @@ const Home = () => {
             libraries designed to make learning fun and effective!
           </p>
 
-          <Link to="/signup">
+          <Link to="/login">
             <button className="bg-blue-500 text-white px-16 md:px-20 py-2 ml-20 md:ml-16 rounded-full text- md:text-xl font-montserrat hover:bg-blue-600 ">
               Explore
             </button>
@@ -49,7 +49,7 @@ const Home = () => {
             resource for your student.
           </p>
 
-          <Link to="/signup">
+          <Link to="/login">
             <button className="bg-blue-500 text-white px-12 py-2 rounded-full text-xl font-montserrat hover:bg-blue-600 ">
               Dive right in
             </button>
